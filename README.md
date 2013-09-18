@@ -1,2 +1,4 @@
 NoBullying
 ==========
+By: 
+@JosueDanielBust & @jdavidavendano
