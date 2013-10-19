@@ -1,0 +1,33 @@
+    form.form-horizontal(role='form')
+      .form-group
+        label.col-lg-2.control-label(for='inputVictimName') Victima
+        .col-lg-10
+          input#inputVictimName.form-control(type='text', placeholder='Victima')
+      .form-group
+        label.col-lg-2.control-label(for='inputEmail') Email
+        .col-lg-10
+          input#inputEmail.form-control(type='email', placeholder='Email')
+      .form-group
+        label.col-lg-2.control-label(for='inputAttacker') Agresor
+        .col-lg-10
+          input#inputAttacker.form-control(type='text', placeholder='Agresor')
+      .form-group
+        label.col-lg-2.control-label(for='inputSchool') Colegio
+        .col-lg-10
+          select#inputSchool.form-control
+            option 1
+            option 2
+            option 3
+            option 4
+            option 5
+      .form-group
+        label.col-lg-2.control-label(for='inputActs') Hechos
+        .col-lg-10
+          textarea#inputActs.form-control(rows='3')
+      .form-group
+        label(for='inputFile') Archivos Adjuntos
+        input#inputFile(type='file')
+        p.help-block Envia imagenes que apoyen tu reporte.
+      .form-group
+        .col-lg-offset-2.col-lg-10
+          button.btn.btn-primary(type='submit') Enviar

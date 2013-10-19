@@ -1,0 +1,82 @@
+extends layout
+
+block content
+    .navbar.navbar-inverse.navbar-fixed-top.shadow
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand#logo(href='../#logo')
+            span.glyphicon.glyphicon-tags(style='font-size: 15px; padding: 0px 15px 0px 15px;')
+            | NoBullying
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='../#home') Home
+            li
+              a(href='../#about') About
+            li
+              a(href='../#contact') Contact
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#NothingHere') Has entrado como: <%user%>
+            li
+              a(href='/logout') Salir
+
+    // Main jumbotron for a primary marketing message or call to action
+    .jumbotron-report
+      .container.text_center
+        h1 Report
+        p
+          | Description of report page
+    // Form of report
+    div.col-md-12.col-lg-12.ReportHeight
+      div.col-md-3.col-lg-3.ReportHeight
+      div.col-md-6.col-lg-6.ReportHeight
+        form.form-horizontal(role='form')
+          .form-group
+            label.col-lg-2.control-label(for='inputVictimName') Victima
+            .col-lg-10
+              input#inputVictimName.form-control(type='text', placeholder='Victima')
+          .form-group
+            label.col-lg-2.control-label(for='inputEmail') Email
+            .col-lg-10
+              input#inputEmail.form-control(type='email', placeholder='Email')
+          .form-group
+            label.col-lg-2.control-label(for='inputAttacker') Agresor
+            .col-lg-10
+              input#inputAttacker.form-control(type='text', placeholder='Agresor')
+          .form-group
+            label.col-lg-2.control-label(for='inputSchool') Colegio
+            .col-lg-10
+              select#inputSchool.form-control
+                option 1
+                option 2
+                option 3
+                option 4
+                option 5
+          .form-group
+            label.col-lg-2.control-label(for='inputActs') Hechos
+            .col-lg-10
+              textarea#inputActs.form-control(rows='3')
+          .form-group
+            label.col-lg-2.control-label(for='inputFile') Archivos Adjuntos
+            input#inputFile.col-lg-10(type='file')
+            p.col-lg-7.control-label.help-block Envianos algunas imagenes que apoyen tu reporte.
+          .form-group
+            .col-lg-offset-2.col-lg-10
+              button.btn.btn-primary(type='submit') Enviar
+      div.col-md-3.col-lg-3
+    div.container.col-md-12.col-lg-12
+      hr
+      footer
+        p © NoBullying 2013
+
+    // Bootstrap core JavaScript
+    //    ================================================== 
+    // Placed at the end of the document so the pages load faster
+    script(src='javascripts/jquery.js')
+    script(src='javascripts/bootstrap.js')
+    script(src='javascripts/js.js')

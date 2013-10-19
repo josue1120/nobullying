@@ -1,0 +1,76 @@
+extends layout
+
+block content
+    .navbar.navbar-inverse.navbar-fixed-top.shadow
+      .container
+        .navbar-header
+          button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand#logo(href='#logo')
+            span.glyphicon.glyphicon-tags(style='font-size: 15px; padding: 0px 15px 0px 15px;')
+            | NoBullying
+        .navbar-collapse.collapse
+          ul.nav.navbar-nav
+            li.active
+              a(href='#home') Home
+            li
+              a(href='#about') About
+            li
+              a(href='#contact') Contact
+            li
+              a(href='/report') Report
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='/signup') Registrarse
+            li
+              a(data-toggle='modal', href='#LoginModal') Entrar
+
+    // Modal Login
+    #LoginModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel', aria-hidden='true')
+      .modal-dialog
+        .modal-content
+          .modal-header
+            button.close(type='button', data-dismiss='modal', aria-hidden='true') ×
+            center
+              h4.modal-title Login
+          .modal-body
+            form(method='post', action='/login', accept-charset='UTF-8')
+              input#username.form-control(style='margin-bottom: 15px;', type='text', placeholder='Username', name='username')
+              input#password.form-control(style='margin-bottom: 15px;', type='password', placeholder='Password', name='password')
+              input#sign-in.btn.btn-primary.btn-block(type='submit', value='Sign In')
+              hr
+              input#sign-in-google.btn.btn-primary.btn-block(type='button', value='Entrar con Google')
+              input#sign-in-twitter.btn.btn-primary.btn-block(type='button', value='Entrar con Twitter')
+              input#sign-in-facebook.btn.btn-primary.btn-block(type='button', value='Entrar con Facebook')
+          .modal-footer
+            button.btn.btn-default(type='button', data-dismiss='modal') Close
+
+    // Modal Login End
+    // Main jumbotron for a primary marketing message or call to action
+    .jumbotron-about
+      .container.text_center
+        h1 NoBullying
+        p
+          | This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        p
+          a.btn.btn-primary.btn-lg Learn more »
+    .jumbotron-contact
+      .container.text_center
+        h1 Contact
+        p
+          | This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.
+        p
+          a.btn.btn-primary.btn-lg Learn more »
+    .container
+      hr
+      footer
+        p © NoBullying 2013
+
+    // Bootstrap core JavaScript
+    //    ================================================== 
+    // Placed at the end of the document so the pages load faster
+    script(src='javascripts/jquery.js')
+    script(src='javascripts/bootstrap.js')
+    script(src='javascripts/js.js')

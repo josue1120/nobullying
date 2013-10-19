@@ -1,0 +1,71 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.jumbotron-about {
+    padding: 30px;
+    padding-top: 150px;
+    margin-bottom: 0px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.14286;
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+}
+
+.jumbotron-about h1 {
+    font-size: 63px;
+}
+.jumbotron-about h1 {
+    line-height: 1;
+    color: inherit;
+}
+.jumbotron-about p {
+    line-height: 1.4;
+}
+
+.jumbotron-contact {
+    padding: 30px;
+    padding-top: 80px;
+    margin-bottom: 20px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.14286;
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+}
+
+.jumbotron-contact h1 {
+    font-size: 63px;
+}
+.jumbotron-contact h1 {
+    line-height: 1;
+    color: inherit;
+}
+.jumbotron-contact p {
+    line-height: 1.4;
+}
+
+.jumbotron-report {
+    padding: 30px;
+    padding-top: 150px;
+    margin-bottom: 0px;
+    font-size: 21px;
+    font-weight: 200;
+    line-height: 2.14286;
+    color: inherit;
+    background-color: rgb(255, 255, 255);
+}
+
+.jumbotron-report h1 {
+    font-size: 63px;
+}
+.jumbotron-report h1 {
+    line-height: 1;
+    color: inherit;
+}
+.jumbotron-report p {
+    line-height: 1.4;
+}
